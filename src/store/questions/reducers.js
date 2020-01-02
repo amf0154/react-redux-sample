@@ -1,6 +1,10 @@
 import { GET_QUESTIONS_DATA, CHANGE_QUESTIONS_DATA } from "../constants";
 
-const defaultState = {};
+const defaultState = {
+    data:{
+        list: []
+    }
+};
 export const questionsReducer = (state = defaultState, action) => {
     switch (action.type){
         case GET_QUESTIONS_DATA:

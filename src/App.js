@@ -7,6 +7,7 @@ import Home from './components/Home';
 import store from './store/store';
 function App() {
   return (
+    <div className="container">
     <BrowserRouter>
     <Switch>
       <Provider store={store}>
@@ -15,6 +16,7 @@ function App() {
       </Provider>
       </Switch>
     </BrowserRouter>
+    </div>
   );
 }
 

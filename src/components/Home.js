@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 class Home extends React.Component {
     render = () =>{
-        const {data} = this.props;
+        const { data } = this.props;
         return (<div>Home page
         <button onClick={() => console.log(data)}>console data</button> 
         </div>);
